@@ -10,5 +10,5 @@ import lombok.*;
 @Builder
 public class Person {
     private String firstName, lastName;
-    private int points;
+    private Account account;
 }
