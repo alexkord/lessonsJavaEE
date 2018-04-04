@@ -1,6 +1,6 @@
 package com.javase;
 
-import com.javase.param_class.Message;
+import com.javase.param_class.*;
 import com.javase.simple_mvc.controller.TransferAction;
 import com.javase.simple_mvc.model.Account;
 
@@ -11,10 +11,18 @@ public class Main {
     private final static String password = "ABCD";
 
     public static void main(String[] args) {
-        Message message = new Message();
-        message.setValue("Hello");
-        System.out.println(message.getValue());
-        message.setValue(12);
+        SimpleActionCourse simpleActionCourse = new SimpleActionCourse(new Course(1));
+        new SimpleActionCourse(new PythonCourse(2));
+
+//        Message message = new Message();
+//        message.setValue("Hello");
+//        System.out.println(message.getValue());
+//        message.setValue(12);
+//
+//        Exam<Double> ex1 = new Exam<>("Progr", 15.0);
+//        Exam<Integer> ex2 = new Exam<>("Math", 15);
+//        boolean t = ex1.equalsToMark(ex2);
+//        System.out.println(t);
     }
 
     public static void workWithAccount() {

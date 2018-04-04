@@ -1,6 +1,6 @@
 package com.javase.param_class;
 
-public class Message <T extends Object> {
+public class Message <T> {
     private T value;
 
     public Message() {
