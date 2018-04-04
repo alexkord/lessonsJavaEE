@@ -1,6 +1,7 @@
 package com.javase;
 
 import com.javase.enumeration.MelomanRunner;
+import com.javase.enumeration.TaxiRunner;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -9,7 +10,7 @@ public class Main {
     private final static String password = "ABCD";
 
     public static void main(String[] args) {
-        MelomanRunner.run();
+        TaxiRunner.run();
     }
 
 
