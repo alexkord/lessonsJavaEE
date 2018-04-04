@@ -1,8 +1,6 @@
 package com.javase;
 
-import com.javase.param_class.*;
-import com.javase.simple_mvc.controller.TransferAction;
-import com.javase.simple_mvc.model.Account;
+import com.javase.enumeration.MelomanRunner;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -11,33 +9,10 @@ public class Main {
     private final static String password = "ABCD";
 
     public static void main(String[] args) {
-        SimpleActionCourse simpleActionCourse = new SimpleActionCourse(new Course(1));
-        new SimpleActionCourse(new PythonCourse(2));
-
-//        Message message = new Message();
-//        message.setValue("Hello");
-//        System.out.println(message.getValue());
-//        message.setValue(12);
-//
-//        Exam<Double> ex1 = new Exam<>("Progr", 15.0);
-//        Exam<Integer> ex2 = new Exam<>("Math", 15);
-//        boolean t = ex1.equalsToMark(ex2);
-//        System.out.println(t);
+        MelomanRunner.run();
     }
 
-    public static void workWithAccount() {
-        Account account1 = new Account(78031864L, 258.5);
-        Account account2 = new Account(78031865L, 12.1);
-        TransferAction.transactionAmount = 10;
-        TransferAction.transferIntoAccount(account1, account2);
-        System.out.println(account2.getAmount());
-        System.out.println(account1.getAmount());
-        System.out.println("*********************");
-        TransferAction.transactionAmount = 11.5;
-        TransferAction.transferIntoAccount(account2, account1);
-        System.out.println(account2.getAmount());
-        System.out.println(account1.getAmount());
-    }
+
 
     private static String input() {
         String x;
@@ -49,13 +24,13 @@ public class Main {
                 break;
             } catch (InputMismatchException ime) {
                 System.out.println("Please enter the correct value: ");
-                continue;
+//                continue;
             }
         }
         return x;
     }
 
-    public static void checkPassword() {
+    private static void checkPassword() {
         System.out.print("Enter a password: ");
         String pass = input();
         checkPassword();
