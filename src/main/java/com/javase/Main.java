@@ -1,5 +1,6 @@
 package com.javase;
 
+import com.javase.decomposition.MatrixRunner;
 import com.javase.enumeration.MelomanRunner;
 import com.javase.enumeration.TaxiRunner;
 
@@ -10,7 +11,6 @@ public class Main {
     private final static String password = "ABCD";
 
     public static void main(String[] args) {
-        TaxiRunner.run();
     }
 
 

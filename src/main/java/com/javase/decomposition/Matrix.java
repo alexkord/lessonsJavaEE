@@ -28,8 +28,9 @@ public class Matrix {
     public void setElement(int i, int j, int value) throws MatrixException {
         if (checkRange(i, j)) {
             a[i][j] = value;
+        } else {
+            throw new MatrixException();
         }
-        throw new MatrixException();
     }
 
     @Override

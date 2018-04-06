@@ -6,8 +6,8 @@ import java.sql.Connection;
 
 public class MatrixCreator implements MatrixFiller {
 
-    @Override
-    public void fillRandomized(Matrix t, int start, int end) {
+
+    public static void fillRandomized(Matrix t, int start, int end) {
         int v = t.getVerticalSize();
         int h = t.getHorizontalSize();
 
