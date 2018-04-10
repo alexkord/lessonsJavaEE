@@ -3,6 +3,9 @@ package com.javase;
 import com.javase.decomposition.MatrixRunner;
 import com.javase.enumeration.MelomanRunner;
 import com.javase.enumeration.TaxiRunner;
+import com.javase.polymorphism.CardRunner;
+import com.javase.polymorphism.super_and_this.PointBuildRunner;
+import com.javase.polymorphism.super_and_this.PointRunner;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -11,6 +14,7 @@ public class Main {
     private final static String password = "ABCD";
 
     public static void main(String[] args) {
+
     }
 
 

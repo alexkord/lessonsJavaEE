@@ -1,5 +1,6 @@
 import com.javase.simple_mvc.model.Account;
 import com.javase.simple_mvc.model.Person;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -12,4 +13,9 @@ public class MockitoTestRunner {
 
     @InjectMocks
     private Person person = new Person();
+
+    @Test
+    public void test() {
+        person.setAccount(account);
+    }
 }
