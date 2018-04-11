@@ -7,7 +7,6 @@ public class Main {
     private final static String password = "ABCD";
 
     public static void main(String[] args) {
-
     }
 
 
