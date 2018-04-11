@@ -3,6 +3,7 @@ package com.javase.abstract_class;
 import java.util.Random;
 
 public class TestAction {
+
     public AbstractQuest[] generateTest(final int NUMBER_QUESTS, int maxMode) {
       AbstractQuest[] test = new AbstractQuest[NUMBER_QUESTS];
       for (int i = 0; i < test.length; i++) {

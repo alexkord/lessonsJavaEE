@@ -1,6 +1,6 @@
 package com.javase.abstract_class;
 
-public abstract  class AbstractQuest {
+public abstract class AbstractQuest {
     private long id;
     private String questContent;
 
