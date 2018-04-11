@@ -1,6 +1,6 @@
 package com.javase.override_equals_hash_toString;
 
-public class Student {
+public class Student implements Cloneable {
     private int id;
     private String name;
     private int age;
@@ -56,5 +56,10 @@ public class Student {
 
     public String toString() {
         return getClass().getName() + "@name" + name + " id:" + id + " age:" + age;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }
