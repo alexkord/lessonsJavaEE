@@ -5,6 +5,9 @@ public class Student implements Cloneable {
     private String name;
     private int age;
 
+    public Student() {
+    }
+
     public Student(int id, String name, int age) {
         this.id = id;
         this.name = name;
@@ -13,6 +16,10 @@ public class Student implements Cloneable {
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -62,4 +69,6 @@ public class Student implements Cloneable {
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
+
+
 }

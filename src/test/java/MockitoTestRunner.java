@@ -1,4 +1,5 @@
-import com.javase.simple_mvc.model.Account;
+import
+        com.javase.simple_mvc.model.Account;
 import com.javase.simple_mvc.model.Person;
 import org.junit.Test;
 import org.junit.runner.RunWith;
