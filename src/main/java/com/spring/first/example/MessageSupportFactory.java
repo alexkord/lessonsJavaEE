@@ -13,7 +13,7 @@ public class MessageSupportFactory {
     private MessageSupportFactory() {
         properties = new Properties();
         try {
-            properties.load(new FileInputStream("com/spring/first/example/msf.properties"));
+            properties.load(new FileInputStream("/Users/oleg_cherednichenko/IdeaProjects/lessonsJavaEE/src/main/java/com/spring/first/example/msf.properties"));
             String rendererClass = properties.getProperty("renderer.class");
             String providerClass = properties.getProperty("provider.class");
 
@@ -30,5 +30,13 @@ public class MessageSupportFactory {
 
     public static MessageSupportFactory getInstance() {
         return instance;
+    }
+
+    public MessageRenderer getMessageRenderer() {
+        return messageRenderer;
+    }
+
+    public MessageProvider getMessageProvider() {
+        return messageProvider;
     }
 }
