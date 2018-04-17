@@ -9,9 +9,10 @@ public class MainSpring {
 //        mr.setMessageProvider(mp);
 //        mr.render();
 
-        MessageRenderer mr = MessageSupportFactory.getInstance().getMessageRenderer();
-        MessageProvider mp = MessageSupportFactory.getInstance().getMessageProvider();
-        mr.setMessageProvider(mp);
-        mr.render();
+//        MessageRenderer mr = MessageSupportFactory.getInstance().getMessageRenderer();
+//        MessageProvider mp = MessageSupportFactory.getInstance().getMessageProvider();
+//        mr.setMessageProvider(mp);
+//        mr.render();
+        HelloWorldSpringDI.runSpringContext();
     }
 }
