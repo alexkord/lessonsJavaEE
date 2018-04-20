@@ -7,7 +7,6 @@
             class="com.spring.first.example.HelloWorldMessageProvider"/>
     <bean id="renderer"
           class="com.spring.first.example.StandardOutMessageRenderer"
-          p:messageProvider-ref="provider"
-    />
+          p:messageProvider-ref="provider"/>
 
 </beans>

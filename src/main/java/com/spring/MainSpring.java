@@ -1,9 +1,11 @@
 package com.spring;
 
+import com.spring.basic_of_spring.App;
 import com.spring.first.example.*;
 
 public class MainSpring {
     public static void main(String[] args) {
+
 //        MessageRenderer mr = new StandardOutMessageRenderer();
 //        MessageProvider mp = new HelloWorldMessageProvider();
 //        mr.setMessageProvider(mp);
@@ -15,6 +17,6 @@ public class MainSpring {
 //        mr.render();
 //        HelloWorldSpringDI.runSpringContext();
 
-
+        App.startAppContext();
     }
 }

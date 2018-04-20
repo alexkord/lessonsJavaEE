@@ -20,6 +20,7 @@
         <fileset id="fileset" name="App Context" removed="false">
           <file>file://$MODULE_DIR$/web/META-INF/spring/app-context.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/app-context.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring.xml</file>
         </fileset>
       </configuration>
     </facet>
