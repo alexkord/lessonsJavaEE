@@ -13,6 +13,8 @@ public class MainSpring {
 //        MessageProvider mp = MessageSupportFactory.getInstance().getMessageProvider();
 //        mr.setMessageProvider(mp);
 //        mr.render();
-        HelloWorldSpringDI.runSpringContext();
+//        HelloWorldSpringDI.runSpringContext();
+
+
     }
 }
