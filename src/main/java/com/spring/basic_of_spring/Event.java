@@ -4,9 +4,16 @@ import java.text.DateFormat;
 import java.util.Date;
 
 public class Event {
-    private int id = (int) (Math.random() * 10) + 1;
+    private int id;
     private String msg;
     private Date date;
+
+    public Event(String...words) {
+        for (String s : words) {
+            System.out.print(s + " ");
+        }
+        System.out.println();
+    }
 
     public Event(Date date) {
         this.date = date;
@@ -14,6 +21,10 @@ public class Event {
 
     public Event(Date date, DateFormat df) {
         this.date = date;
+    }
+
+    public int getId() {
+        return id = (int) (Math.random() * 10_000_000) + 1_000_000;
     }
 
     public String getMsg() {

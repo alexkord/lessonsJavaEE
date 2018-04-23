@@ -1,7 +1,10 @@
 package com.spring;
 
 import com.spring.basic_of_spring.App;
+import com.spring.basic_of_spring.Event;
 import com.spring.first.example.*;
+
+import javax.swing.*;
 
 public class MainSpring {
     public static void main(String[] args) {
@@ -17,6 +20,7 @@ public class MainSpring {
 //        mr.render();
 //        HelloWorldSpringDI.runSpringContext();
 
-        App.startAppContext();
+//        App.startAppContext();
+
     }
 }

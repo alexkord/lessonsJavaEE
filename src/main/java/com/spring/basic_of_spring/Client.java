@@ -1,19 +1,19 @@
 package com.spring.basic_of_spring;
 
 public class Client {
-    private String id;
+    private long id;
     private String fullName;
 
-    public Client(String id, String fullName) {
+    public Client(long id, String fullName) {
         this.id = id;
         this.fullName = fullName;
     }
 
-    public String getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(long id) {
         this.id = id;
     }
 

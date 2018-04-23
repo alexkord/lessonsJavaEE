@@ -17,7 +17,7 @@ public class App {
     }
 
     public void logEvent(String msg) {
-        String message = msg.replaceAll(client.getId(), client.getFullName());
+        //String message = msg.replaceAll(new String(client.getId()), client.getFullName());
         eventLogger.logEvent(event);
     }
 
