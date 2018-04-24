@@ -5,7 +5,7 @@ public class MatrixRunner {
         try {
             Matrix p = new Matrix(2, 3);
             MatrixCreator.fillRandomized(p, 2, 8);
-            System.out.println("Matrix first is " + p);
+            System.out.println("Matrix first_example is " + p);
             Matrix q = new Matrix(3 ,4);
             MatrixCreator.fillRandomized(q, 2, 7);
             System.out.println("Matrix second is " + q);

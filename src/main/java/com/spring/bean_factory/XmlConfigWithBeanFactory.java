@@ -8,6 +8,8 @@ public class XmlConfigWithBeanFactory {
     public static void config() {
         DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
         XmlBeanDefinitionReader rdr = new XmlBeanDefinitionReader(factory);
-        rdr.loadBeanDefinitions(new ClassPathResource(""));
+        rdr.loadBeanDefinitions(new ClassPathResource("xml-bean-factory-config.xml"));
+        Oracle oracle = (Oracle) factory.getBean("oracle");
+        System.out.println(oracle.defineMeaningOfLife());
     }
 }

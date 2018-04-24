@@ -1,4 +1,4 @@
-package com.spring.first.example;
+package com.spring.first_example.example;
 
 import java.io.FileInputStream;
 import java.util.Properties;

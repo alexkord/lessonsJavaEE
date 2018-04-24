@@ -1,4 +1,4 @@
-package com.spring.first.example;
+package com.spring.first_example.example;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

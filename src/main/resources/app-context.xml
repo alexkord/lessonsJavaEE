@@ -4,9 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="provider"
-            class="com.spring.first.example.HelloWorldMessageProvider"/>
+            class="com.spring.first_example.example.HelloWorldMessageProvider"/>
     <bean id="renderer"
-          class="com.spring.first.example.StandardOutMessageRenderer"
+          class="com.spring.first_example.example.StandardOutMessageRenderer"
           p:messageProvider-ref="provider"/>
 
 </beans>

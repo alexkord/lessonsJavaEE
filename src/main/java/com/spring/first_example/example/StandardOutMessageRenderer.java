@@ -1,4 +1,4 @@
-package com.spring.first.example;
+package com.spring.first_example.example;
 
 public class StandardOutMessageRenderer implements MessageRenderer {
     private MessageProvider messageProvider;

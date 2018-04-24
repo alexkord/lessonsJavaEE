@@ -1,8 +1,6 @@
 package com.spring;
 
-import com.spring.basic_of_spring.App;
-import com.spring.basic_of_spring.Event;
-import com.spring.first.example.*;
+import com.spring.bean_factory.XmlConfigWithBeanFactory;
 
 
 public class MainSpring {
@@ -20,6 +18,7 @@ public class MainSpring {
 //        HelloWorldSpringDI.runSpringContext();
 
 //        App.startAppContext();
+        XmlConfigWithBeanFactory.config();
     }
 
 }
