@@ -18,7 +18,8 @@ public class MainSpring {
 //        HelloWorldSpringDI.runSpringContext();
 
 //        App.startAppContext();
-        XmlConfigWithBeanFactory.config();
+//        XmlConfigWithBeanFactory.config();
+
     }
 
 }
