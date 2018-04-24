@@ -23,4 +23,8 @@
 
     <bean id="dateFormat" class="java.text.DateFormat" factory-method="getDateTimeInstance"/>
 
+    <bean id="fileEvent" class="com.spring.basic_of_spring.FileEventLogger">
+        <constructor-arg value=""/>
+    </bean>
+
 </beans>
