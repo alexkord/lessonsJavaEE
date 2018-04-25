@@ -2,6 +2,9 @@ package com.spring;
 
 import com.spring.bean_factory.XmlConfigWithBeanFactory;
 
+import java.io.File;
+import java.io.IOException;
+
 
 public class MainSpring {
     public static void main(String[] args) {
@@ -20,6 +23,12 @@ public class MainSpring {
 //        App.startAppContext();
 //        XmlConfigWithBeanFactory.config();
 
+//        File file = new File("/Users/oleg_cherednichenko/IdeaProjects/lessonsJavaEE/src/main/resources/file.txt");
+//        try {
+//            file.createNewFile();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
 }
