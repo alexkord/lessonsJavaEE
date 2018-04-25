@@ -25,7 +25,11 @@
 
     <bean id="fileEventLogger" class="com.spring.basic_of_spring.loggers.FileEventLogger" init-method="init">
         <constructor-arg value="file.txt"/>
+    </bean>
 
+    <bean id="cacheFileEventLogger" class="com.spring.basic_of_spring.loggers.CacheFileEventLogger"
+          destroy-method="destroy" parent="eventLogger">
+        <constructor-arg
     </bean>
 
 </beans>
