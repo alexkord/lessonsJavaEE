@@ -1,5 +1,8 @@
 package com.spring.basic_of_spring;
 
+import com.spring.basic_of_spring.beans.Client;
+import com.spring.basic_of_spring.beans.Event;
+import com.spring.basic_of_spring.loggers.ConsoleEventLogger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

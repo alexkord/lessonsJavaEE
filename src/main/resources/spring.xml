@@ -3,19 +3,19 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="client" class="com.spring.basic_of_spring.Client">
+    <bean id="client" class="com.spring.basic_of_spring.beans.Client">
         <constructor-arg type="long" value="3044312555"/>
         <constructor-arg value="Alex Axent"/>
     </bean>
 
-    <bean id="eventLogger" class="com.spring.basic_of_spring.ConsoleEventLogger"/>
+    <bean id="eventLogger" class="com.spring.basic_of_spring.loggers.ConsoleEventLogger"/>
 
     <bean id="app" class="com.spring.basic_of_spring.App">
         <constructor-arg ref="client"/>
         <constructor-arg ref="eventLogger"/>
     </bean>
 
-    <bean id="event" class="com.spring.basic_of_spring.Event" scope="prototype">
+    <bean id="event" class="com.spring.basic_of_spring.beans.Event" scope="prototype">
         <constructor-arg>
             <bean class="java.util.Date"/>
         </constructor-arg>
@@ -23,8 +23,9 @@
 
     <bean id="dateFormat" class="java.text.DateFormat" factory-method="getDateTimeInstance"/>
 
-    <bean id="fileEvent" class="com.spring.basic_of_spring.FileEventLogger">
+    <bean id="fileEventLogger" class="com.spring.basic_of_spring.loggers.FileEventLogger" init-method="init">
         <constructor-arg value="file.txt"/>
+
     </bean>
 
 </beans>

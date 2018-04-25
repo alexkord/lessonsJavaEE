@@ -23,12 +23,6 @@ public class MainSpring {
 //        App.startAppContext();
 //        XmlConfigWithBeanFactory.config();
 
-//        File file = new File("/Users/oleg_cherednichenko/IdeaProjects/lessonsJavaEE/src/main/resources/file.txt");
-//        try {
-//            file.createNewFile();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
     }
 
 }

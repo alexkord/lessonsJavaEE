@@ -1,4 +1,4 @@
-package com.spring.basic_of_spring;
+package com.spring.basic_of_spring.beans;
 
 import java.text.DateFormat;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package com.spring.basic_of_spring;
+package com.spring.basic_of_spring.beans;
 
 public class Client {
     private long id;

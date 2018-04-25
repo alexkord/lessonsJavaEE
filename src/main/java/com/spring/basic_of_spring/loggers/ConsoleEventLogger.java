@@ -1,4 +1,6 @@
-package com.spring.basic_of_spring;
+package com.spring.basic_of_spring.loggers;
+
+import com.spring.basic_of_spring.beans.Event;
 
 public class ConsoleEventLogger implements EventLogger {
 
