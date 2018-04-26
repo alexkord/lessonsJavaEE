@@ -2,7 +2,6 @@ package com.spring.basic_of_spring.loggers;
 
 import com.spring.basic_of_spring.beans.Event;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -28,8 +28,8 @@
     </bean>
 
     <bean id="cacheFileEventLogger" class="com.spring.basic_of_spring.loggers.CacheFileEventLogger"
-          destroy-method="destroy" parent="eventLogger">
-        <constructor-arg
+          destroy-method="destroy" parent="fileEventLogger">
+        <constructor-arg index="1" value="5"/>
     </bean>
 
 </beans>
