@@ -6,6 +6,7 @@
     <bean id="client" class="com.spring.basic_of_spring.beans.Client">
         <constructor-arg type="long" value="3044312555"/>
         <constructor-arg value="Alex Axent"/>
+        <property name="greeting" value="Hello, there!"/>
     </bean>
 
     <bean id="eventLogger" class="com.spring.basic_of_spring.loggers.ConsoleEventLogger"/>
