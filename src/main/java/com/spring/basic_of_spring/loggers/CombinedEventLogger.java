@@ -9,6 +9,7 @@ public class CombinedEventLogger extends AbstractLogger {
     private final Collection<EventLogger> loggers;
 
     public CombinedEventLogger(Collection<EventLogger> loggers) {
+        super();
         this.loggers = loggers;
     }
 
