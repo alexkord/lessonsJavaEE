@@ -6,12 +6,6 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
-
-    <bean id="provider"
-            class="com.spring.first_example.example.HelloWorldMessageProvider"/>
-    <bean id="renderer"
-          class="com.spring.first_example.example.StandardOutMessageRenderer"
-          p:messageProvider-ref="provider"/>
-
+    <context:component-scan base-package="com.spring.annotation"/>
 
 </beans>
