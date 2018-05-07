@@ -7,11 +7,9 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="provider"
-            class="com.spring.first_example.example.HelloWorldMessageProvider"/>
-    <bean id="renderer"
-          class="com.spring.first_example.example.StandardOutMessageRenderer"
-          p:messageProvider-ref="provider"/>
-
-
+    <bean id="messageProvider"
+            class="com.spring.ch3.HelloWorldMessageProvider"/>
+    <bean id="messageRenderer"
+          class="com.spring.ch3.StandardOutMessageRenderer"/>
+    
 </beans>

@@ -1,6 +1,6 @@
 package com.spring.dependecy_types.dependency_pull;
 
-import com.spring.first_example.example.MessageRenderer;
+import com.spring.ch3.MessageRenderer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

@@ -1,4 +1,4 @@
-package com.spring.first_example.example;
+package com.spring.ch3;
 
 public interface MessageProvider {
     String getMessage();

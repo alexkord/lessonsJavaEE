@@ -32,4 +32,9 @@ public class FileEventLogger implements EventLogger {
         }
 
     }
+
+    @Override
+    public String getName() {
+        return null;
+    }
 }
