@@ -8,8 +8,13 @@
        http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="messageProvider"
-            class="com.spring.ch3.HelloWorldMessageProvider"/>
+            class="com.spring.ch3.HelloWorldMessageProvider">
+
+    </bean>
+
     <bean id="messageRenderer"
-          class="com.spring.ch3.StandardOutMessageRenderer"/>
+          class="com.spring.ch3.StandardOutMessageRenderer"
+          p:messageProvider-ref="messageProvider">
+    </bean>
     
 </beans>
