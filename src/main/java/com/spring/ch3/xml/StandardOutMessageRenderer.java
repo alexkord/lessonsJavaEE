@@ -1,4 +1,7 @@
-package com.spring.ch3;
+package com.spring.ch3.xml;
+
+import com.spring.ch3.MessageProvider;
+import com.spring.ch3.MessageRenderer;
 
 public class StandardOutMessageRenderer implements MessageRenderer {
     private MessageProvider messageProvider;
