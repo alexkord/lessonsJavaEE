@@ -5,15 +5,14 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 public class DeclareSpringComponents {
     public static void main(String[] args) {
         GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-        ctx.load("classpath:app-context.xml");
         ctx.refresh();
-        MessageProvider messageProvider = (MessageProvider) ctx.getBean("messageProvider", MessageProvider.class);
-        System.out.println(messageProvider.getMessage());
-
-        GenericXmlApplicationContext context = new GenericXmlApplicationContext();
-        context.load("classpath:app-context-annotation.xml");
-        context.refresh();
-        MessageRenderer messageRenderer = (MessageRenderer) context.getBean("messageRenderer");
-        messageRenderer.render();
+        ctx.load("classpath:app-context-annotation.xml");
+        MessageProvider provider = (MessageProvider) ctx.getBean("messageProvider", MessageProvider.class);
+        System.out.println(provider.getMessage());
+//        GenericXmlApplicationContext context = new GenericXmlApplicationContext();
+//        context.load("classpath:app-context-annotation.xml");
+//        context.refresh();
+//        MessageProvider provider = (MessageProvider) context.getBean("messageProvider", MessageProvider.class);
+//        System.out.println(provider.getMessage());
     }
 }
