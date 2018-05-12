@@ -5,9 +5,10 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 public class DeclareSpringComponents {
     public static void main(String[] args) {
         GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-        ctx.refresh();
+
         ctx.load("classpath:app-context-annotation.xml");
-        MessageProvider provider = (MessageProvider) ctx.getBean("messageProvider", MessageProvider.class);
+        ctx.refresh();
+        MessageProvider provider = (MessageProvider) ctx.getBean("message", MessageProvider.class);
         System.out.println(provider.getMessage());
 //        GenericXmlApplicationContext context = new GenericXmlApplicationContext();
 //        context.load("classpath:app-context-annotation.xml");
