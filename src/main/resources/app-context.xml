@@ -24,5 +24,12 @@
         </constructor-arg>
     </bean>
 
+    <bean id="injectSimple"
+          class="com.spring.ch3.xml.InjectSimple"
+          p:name="Alex Axent" p:age="32" p:height="1.86"
+          p:programmer="true"
+            p:ageInSeconds="1009000300">
+    </bean>
+
 
 </beans>

@@ -1,10 +1,19 @@
-package com.spring.ch3.xml;
+package com.spring.ch3.annotation;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+@Service("injectSimple")
 public class InjectSimple {
+    @Value("Alex Axent")
     private String name;
+    @Value("35")
     private int age;
+    @Value("1.86")
     private float height;
+    @Value("true")
     private boolean isProgrammer;
+    @Value("1000990001122")
     private Long ageInSeconds;
 
     public void setName(String name) {
