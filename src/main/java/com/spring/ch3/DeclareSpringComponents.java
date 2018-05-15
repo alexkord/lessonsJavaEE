@@ -1,7 +1,5 @@
 package com.spring.ch3;
 
-import com.spring.ch3.xml.ConstructorConfusion;
-import com.spring.ch3.annotation.InjectSimple;
 import com.spring.ch3.xml.InjectSimpleSpel;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
