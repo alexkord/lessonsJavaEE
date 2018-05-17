@@ -5,18 +5,17 @@ import org.springframework.stereotype.Service;
 
 @Service("injectSimpleSpel")
 public class InjectSimpleSpel {
-
     @Value("#{injectSimpleConfig.name}")
     private String name;
 
-    @Value("#{injectSimpleConfig.age}")
+    @Value("#{injectSimpleConfig.age + 1}")
     private int age;
 
     @Value("#{injectSimpleConfig.height}")
     private float height;
 
     @Value("#{injectSimpleConfig.programmer}")
-    private boolean isProgrammer;
+    private boolean programmer;
 
     @Value("#{injectSimpleConfig.ageInSeconds}")
     private Long ageInSeconds;
@@ -27,10 +26,7 @@ public class InjectSimpleSpel {
                 "name : " + name + "\n" +
                 "age : " + age + "\n" +
                 "height : " + height + "\n" +
-                "isProgrammer : " + isProgrammer + "\n" +
+                "isProgrammer : " + programmer + "\n" +
                 "ageInSeconds : " + ageInSeconds;
     }
 }
-
-
-

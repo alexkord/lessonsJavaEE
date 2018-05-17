@@ -17,12 +17,12 @@
           p:messageProvider-ref="messageProvider">
     </bean>
 
-    <!--<bean id="constructorConfusion"-->
-          <!--class="com.spring.ch3.xml.ConstructorConfusion">-->
-        <!--<constructor-arg type="int">-->
-            <!--<value>90</value>-->
-        <!--</constructor-arg>-->
-    <!--</bean>-->
+    <bean id="constructorConfusion"
+          class="com.spring.ch3.xml.ConstructorConfusion">
+        <constructor-arg type="int">
+            <value>90</value>
+        </constructor-arg>
+    </bean>
 
     <bean id="injectSimple"
           class="com.spring.ch3.xml.InjectSimple"
