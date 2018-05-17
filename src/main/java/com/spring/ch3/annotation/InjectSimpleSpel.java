@@ -22,7 +22,7 @@ public class InjectSimpleSpel {
 
     @Override
     public String toString() {
-        return "InjectSimple-> \n" +
+        return "InjectSimple--> \n" +
                 "name : " + name + "\n" +
                 "age : " + age + "\n" +
                 "height : " + height + "\n" +
