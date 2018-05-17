@@ -1,14 +1,15 @@
 package com.spring.ch3;
 
 import com.spring.ch3.annotation.InjectSimpleSpel;
+import com.spring.ch3.xml.InjectRef;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class DeclareSpringComponents {
     public static void main(String[] args) {
         GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-        ctx.load("classpath:app-context-annotation.xml");
+        ctx.load("classpath:xml-bean-factory-config.xml");
         ctx.refresh();
-        InjectSimpleSpel injectSimpleSpel = (InjectSimpleSpel) ctx.getBean("injectSimpleSpel");
-        System.out.println(injectSimpleSpel);
+        InjectRef injectRef = (InjectRef) ctx.getBean("injectRef");
+        System.out.println(injectRef);
     }
 }
