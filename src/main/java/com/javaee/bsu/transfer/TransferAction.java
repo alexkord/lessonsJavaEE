@@ -17,7 +17,7 @@ public class TransferAction {
         double demand = from.getAmount() - transactionAmount;
         if (demand >= 0) {
             from.setAmount(demand);
-            to.setAmount(transactionAmount);
+            to.addAmount(transactionAmount);
             return true;
         } else {
             return false;
