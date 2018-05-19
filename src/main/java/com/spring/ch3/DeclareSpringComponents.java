@@ -1,6 +1,5 @@
 package com.spring.ch3;
 
-import com.spring.ch3.annotation.InjectSimpleSpel;
 import com.spring.ch3.xml.InjectRef;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
