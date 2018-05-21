@@ -40,5 +40,15 @@
           p:programmer="#{injectSimpleConfig.programmer}"
           p:ageInSeconds="#{injectSimpleConfig.ageInSeconds}"/>
 
+    <bean id="target1" class="com.spring.ch3.SimpleTarget"
+          p:val-ref="injectBeanParent"/>
+    <bean id="target2" class="com.spring.ch3.SimpleTarget"
+          p:val-ref="injectBean"/>
+    <bean id="target3" class="com.spring.ch3.SimpleTarget">
+          <property name="val">
+              <ref parent="injectBean"/>
+          </property>
+    </bean>
+    <bean id="injectBean" class="java.lang.String" c:_0="Child in bean"/>
 
 </beans>

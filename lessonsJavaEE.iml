@@ -7,7 +7,7 @@
           <deploymentDescriptor name="context.xml" url="file://$MODULE_DIR$/web/META-INF/context.xml" />
         </descriptors>
         <webroots>
-          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
+          <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
         <sourceRoots>
           <root url="file://$MODULE_DIR$/src/main/java" />
@@ -18,11 +18,14 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="App Context" removed="false">
+          <dependency>fileset</dependency>
           <file>file://$MODULE_DIR$/web/META-INF/spring/app-context.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/app-context.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spring.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/xml-bean-factory-config.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/app-context-annotation.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/parent.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/app-context.xml</file>
         </fileset>
       </configuration>
     </facet>
