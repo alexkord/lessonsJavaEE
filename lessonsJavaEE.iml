@@ -23,6 +23,7 @@
           <file>file://$MODULE_DIR$/src/main/resources/spring.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/xml-bean-factory-config.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/app-context-annotation.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/parent.xml</file>
         </fileset>
       </configuration>
     </facet>
