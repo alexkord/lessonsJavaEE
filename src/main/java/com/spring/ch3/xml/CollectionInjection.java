@@ -37,7 +37,7 @@ public class CollectionInjection {
         this.list = list;
     }
 
-    public void displayInfo() {
+    private void displayInfo() {
         System.out.println("Map contents:\n");
 
         for (Map.Entry<String, Object> entry: map.entrySet()) {
