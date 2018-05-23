@@ -1,5 +1,7 @@
 package com.spring.ch3.xml;
 
+import org.springframework.context.support.GenericXmlApplicationContext;
+
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -12,7 +14,11 @@ public class CollectionInjection {
     private List list;
 
     public static void main(String[] args) {
-
+        GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
+        ctx.load("classpath:xml-bean-factory-config.xml");
+        ctx.refresh();
+        CollectionInjection instance = (CollectionInjection) ctx.getBean("injectCollection");
+        instance.displayInfo();
     }
 
     public void setMap(Map<String, Object> map) {
