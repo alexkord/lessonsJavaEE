@@ -62,4 +62,14 @@ public class Abonent {
         phoneNumber.setNetCode(netCode);
         phoneNumber.generateNumber();
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder(100);
+        sb.append("Abonent " +  name + " :\n");
+        sb.append("     ID - " + id + "\n");
+        sb.append("     Tariff Plan - " + tariffPlan + "\n");
+        sb.append("     Phone Number - " + getPhoneNumber() + "\n");
+        return sb.toString();
+    }
 }
