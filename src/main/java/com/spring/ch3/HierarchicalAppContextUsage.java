@@ -13,12 +13,11 @@ public class HierarchicalAppContextUsage {
         child.setParent(parent);
         child.refresh();
 
-        SimpleTarget simpleTarget1 = (SimpleTarget) child.getBean("target1");
-        SimpleTarget simpleTarget2 = (SimpleTarget) child.getBean("target2");
-        SimpleTarget simpleTarget3 = (SimpleTarget) child.getBean("target3");
-
-        System.out.println(simpleTarget1.getVal());
-        System.out.println(simpleTarget2.getVal());
-        System.out.println(simpleTarget3.getVal());
+        SimpleTarget target1 = (SimpleTarget) child.getBean("target1");
+        SimpleTarget target2 = (SimpleTarget) child.getBean("target2");
+        SimpleTarget target3 = (SimpleTarget) child.getBean("target3");
+        System.out.println(target1.getVal());
+        System.out.println(target2.getVal());
+        System.out.println(target3.getVal());
     }
 }
