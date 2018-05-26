@@ -24,7 +24,7 @@ public class TeacherCreator {
         }
     }
 
-    public static boolean isRectorId(int id) {
+    private static boolean isRectorId(int id) {
         return id == 6;
     }
 }
