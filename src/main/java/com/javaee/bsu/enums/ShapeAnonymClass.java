@@ -16,4 +16,21 @@ public enum ShapeAnonymClass {
     public double getB() {
         return b;
     }
+
+    public void setShape(double a, double b) {
+        if ((a <= 0 || b <= 0) || a != b && this == SQUARE) {
+            throw new IllegalArgumentException();
+        }
+        this.a = a;
+        this.b = b;
+    }
+
+    public double computeSquare() {
+        return a * b;
+    }
+
+    public String toString() {
+        return name() + "-> a = " + a + ", b = " + b;
+    }
+
 }
