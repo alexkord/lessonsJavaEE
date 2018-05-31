@@ -22,10 +22,10 @@ public class TriangleAction implements IShapeAction {
         double perimeter = 0;
         if (shape instanceof Triangle) {
             Triangle triangle = (Triangle) shape;
-
+            perimeter = triangle.getA() + triangle.getB() + triangle.getC();
         } else {
             throw new IllegalArgumentException("incompatible shape: " + shape.getClass());
         }
-        return 0;
+        return perimeter;
     }
 }
