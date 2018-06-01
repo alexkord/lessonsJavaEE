@@ -19,7 +19,7 @@ public class Triangle extends AbstractShape {
     }
 
     public double getC() {
-        double c = Math.sqrt(Math.pow(getA(), 2) + Math.pow(b, 2) - 2 * getA() * b * Math.cos(angle));
+        double c = Math.sqrt((Math.pow(getA(), 2) + Math.pow(b, 2)) - 2 * getA() * b * Math.cos(angle));
         return c;
     }
 }

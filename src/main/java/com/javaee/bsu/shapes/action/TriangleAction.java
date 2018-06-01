@@ -1,31 +1,16 @@
 package com.javaee.bsu.shapes.action;
 
-import com.javaee.bsu.shapes.action.entity.AbstractShape;
 import com.javaee.bsu.shapes.action.entity.Triangle;
 
-public class TriangleAction implements IShapeAction {
+public class TriangleAction implements IShapeAction<Triangle> {
 
     @Override
-    public double computeSquare(AbstractShape shape) {
-        double square = 0;
-        if (shape instanceof Triangle) {
-            Triangle triangle = (Triangle) shape;
-            square = 1 / 2 * triangle.getA() * triangle.getB() * Math.sin(triangle.getAngle());
-        } else {
-            throw new IllegalArgumentException("Incompatible shape: " + shape.getClass());
-        }
-        return square;
+    public double computeSquare(Triangle shape) {
+        return 1 / 2 * shape.getA() * shape.getB() * Math.sin(shape.getAngle());
     }
 
     @Override
-    public double computePerimeter(AbstractShape shape) {
-        double perimeter = 0;
-        if (shape instanceof Triangle) {
-            Triangle triangle = (Triangle) shape;
-            perimeter = triangle.getA() + triangle.getB() + triangle.getC();
-        } else {
-            throw new IllegalArgumentException("incompatible shape: " + shape.getClass());
-        }
-        return perimeter;
+    public double computePerimeter(Triangle shape) {
+        return shape.getA() + shape.getB() + shape.getC();
     }
 }

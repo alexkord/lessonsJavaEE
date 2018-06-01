@@ -9,19 +9,17 @@ import static java.lang.Math.PI;
 
 public class ActionMain {
     public static void main(String[] args) {
-        IShapeAction action;
+        IShapeAction<Rectangle> actionRect = new RectangleAction();
+        IShapeAction<Triangle> actionTrian = new TriangleAction();
         try {
             Rectangle rectShape = new Rectangle(2, 3);
-            action = new RectangleAction();
-            System.out.println("Square rectangle: " + action.computeSquare(rectShape));
-            System.out.println("Perimeter rectangle: " + action.computePerimeter(rectShape));
+            System.out.println("Square rectangle: " + actionRect.computeSquare(rectShape));
+            System.out.println("Perimeter rectangle: " + actionRect.computePerimeter(rectShape));
 
             Triangle trShape = new Triangle(3, 4, PI / 6);
-            action = new TriangleAction();
-            System.out.println("Square triangle: " + action.computeSquare(trShape));
-            System.out.println("Perimeter triangle: " + action.computePerimeter(trShape));
-//            action.computePerimeter(rectShape);
-        } catch (IllegalArgumentException ex) {
+            System.out.println("Square triangle: " + actionTrian.computeSquare(trShape));
+            System.out.println("Perimeter triangle: " + actionTrian.computePerimeter(trShape));
+        } catch (ClassCastException ex) {
             System.err.println(ex.getMessage());
         }
     }
