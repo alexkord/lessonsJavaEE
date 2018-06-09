@@ -9,5 +9,7 @@ public class DemoRegular {
         Matcher m1 = p1.matcher("aaay");
         boolean b = m1.matches();
         System.out.println(b);
+
+        String regex = "(\\w{6,})@(\\w+\\.)([a-z]{2,4})";
     }
 }
