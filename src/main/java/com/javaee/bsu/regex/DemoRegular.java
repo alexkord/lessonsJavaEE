@@ -11,5 +11,11 @@ public class DemoRegular {
         System.out.println(b);
 
         String regex = "(\\w{6,})@(\\w+\\.)([a-z]{2,4})";
+        String s = "e-mails:blinov@gmail.com, oleg.cherednichenko@ring.com";
+        Pattern p2 = Pattern.compile(regex);
+        Matcher m2 = p2.matcher(s);
+        while (m2.find()) {
+            System.out.println("e-mail: " + m2.group());
+        }
     }
 }
